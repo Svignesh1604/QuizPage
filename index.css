@@ -1,0 +1,256 @@
+/* Add a background image to the body */
+body {
+    background-image: url('https://t3.ftcdn.net/jpg/02/64/45/14/360_F_264451404_s4Dhf0mQZdg1N4Gx9RrwfnIIjBiZQ459.jpg'); /* Replace with the actual path of your image */
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background in place during scrolling */
+}
+
+/* General styling for the container */
+#rules-container {
+    background: linear-gradient(135deg, rgba(106, 17, 203, 0.9), rgba(37, 117, 252, 0.9)); /* Slight transparency for gradient */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: 40px auto;
+    color: #fff;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    animation: fadeIn 1.5s ease-out;
+}
+
+
+/* Header styling */
+#rules-container h4 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+/* List item styling with hover effect */
+#rules-container ul li {
+    list-style: none;
+    font-size: 1.1em;
+    margin: 10px 0;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.2); /* Light translucent background for list items */
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Hover effect for list items */
+#rules-container ul li:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: translateX(10px);
+}
+
+/* Styling the start button */
+#start-btn {
+    background: linear-gradient(to right, #ff416c, #ff4b2b); /* Gradient button */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(255, 75, 43, 0.4);
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-top: 20px;
+}
+
+/* Hover effect for button */
+#start-btn:hover {
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 75, 43, 0.6);
+}
+
+/* Keyframe for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* General styling for the quiz section */
+#quiz-section {
+    background: linear-gradient(135deg, #e0f7fa, #a7ffeb); /* Lighter, soft pastel gradient */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Softer shadow for a more subtle look */
+    max-width: 600px;
+    margin: 50px auto;
+    color: #333; /* Darker text for better contrast on a light background */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    animation: fadeInSlideUp 1.5s ease-out;
+}
+
+/* Header styling */
+#quiz-section h4 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #00695c; /* Darker teal for a more professional look */
+}
+
+/* Timer styling */
+#timer {
+    font-size: 1.4em;
+    font-weight: bold;
+    background: rgba(0, 150, 136, 0.1); /* Subtle background for timer */
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 20px;
+    color:crimson; /* Dark teal to match header */
+    animation: blink 1s infinite alternate; /* Blinking effect for timer */
+}
+
+/* Quiz header styling */
+.quiz-header {
+    margin: 20px 0;
+    font-size: 1.2em;
+    background: rgba(255, 255, 255, 0.2); /* Light transparent white for contrast */
+    padding: 10px;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Hover effect for quiz header */
+.quiz-header:hover {
+    background: rgba(255, 255, 255, 0.3); /* Slightly lighter on hover */
+}
+
+/* Quiz container styling */
+#quiz-container {
+    margin: 20px 0;
+}
+
+/* Submit button styling */
+#submit-btn {
+    background: linear-gradient(to right, #81d4fa, #80cbc4); /* Light, professional blue-green gradient */
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Lighter shadow */
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-top: 30px;
+}
+
+/* Hover effect for submit button */
+#submit-btn:hover {
+    background: linear-gradient(to right, #80cbc4, #81d4fa); /* Subtle reverse gradient on hover */
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Slightly larger shadow on hover */
+}
+
+/* Keyframe for fade-in and slide-up effect */
+@keyframes fadeInSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Keyframe for blinking timer */
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.7;
+    }
+}
+
+
+/* General styling for the result box */
+#result {
+    background: linear-gradient(135deg, #00c6ff, #0072ff); /* Gradient background for result */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    margin: 30px auto;
+    color: #fff;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.4em;
+    font-weight: bold;
+    opacity: 0; /* Hidden by default */
+    transform: translateY(30px);
+    animation: fadeInSlideUp 1.5s ease forwards; /* Fade-in with slide-up animation */
+}
+
+/* Styling for the Retry button */
+#retry-btn {
+    background: linear-gradient(to right, #ff512f, #dd2476); /* Gradient background */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transition: background 0.1s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    animation: fadeInButton 1.8s ease forwards; /* Fade-in with slight delay */
+}
+
+/* Hover effect for Retry button */
+#retry-btn:hover {
+    background: linear-gradient(to right, #dd2476, #ff512f);
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Keyframe for fade-in and slide-up effect on result */
+@keyframes fadeInSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Keyframe for fade-in effect on retry button */
+@keyframes fadeInButton {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+ 

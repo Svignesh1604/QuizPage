@@ -1,0 +1,46 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Quiz</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div id="rules-container">
+        <h4>Quiz Rules:</h4>
+        <ul>
+            <li>You have 90 seconds to complete the quiz.</li>
+            <li>Each question is worth 2 point.</li>
+            <li>Once submitted, the quiz cannot be retaken unless you click "Retry".</li>
+        </ul>
+        <button id="start-btn">Start Quiz</button>
+    </div>
+
+    <div id="quiz-section" class="d-none">
+        <h4 style="color:goldenrod;">GR Quiz Time</h4>
+        <div id="timer">Time Left: 01:30</div>
+        <div class="quiz-header">
+            <p style="color: black; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: x-large;">Question 1 of 4</p>
+        </div>
+        <div id="quiz-container"></div>
+        <button id="submit-btn">Submit</button>
+    </div>
+
+    <div id="result" class="d-none"></div>
+    <button id="retry-btn" class="d-none">Retry</button>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
